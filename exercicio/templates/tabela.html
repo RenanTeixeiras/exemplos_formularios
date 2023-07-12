@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Artista</th>
+            <th>Gênero</th>
+            <th>Duração</th>
+        </tr>
+
+        {%  for i in range(qtdreps) %}
+
+        <tr>
+            <td>
+                {{dados['titulos'][i]}}
+            </td>
+            <td>
+                {{dados['artistas'][i]}}
+            </td>
+            <td>
+                {{dados['generos'][i]}}
+            </td>
+            <td>
+                {{dados['duracoes'][i]}}
+            </td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+
+
+
+</body>
+</html>
